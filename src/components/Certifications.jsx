@@ -54,25 +54,25 @@ const Certifications = () => {
       title: 'AWS Solutions Architect Simulation',
       issuer: 'Forage / AWS',
       date: '2025',
-      pdf: 'public/certificates/aws-certificate.pdf',
+      pdf: '/certificates/aws-certificate.pdf',
     },
     {
       title: 'Deloitte Cyber Job Simulation (Forage)',
       issuer: 'Forage / Deloitte',
       date: '2025',
-      pdf: 'public/certificates/deolite-certificate.pdf',
+      pdf: '/certificates/deolite-certificate.pdf',
     },
     {
       title: 'Hackventure 2025 Cyber Security Bootcamp',
       issuer: 'Cyber Security Community',
       date: '2025',
-      pdf: 'public/certificates/bootcamp-certificate.pdf',
+      pdf: '/certificates/bootcamp-certificate.pdf',
     },
     {
       title: 'Design Fundamentals with AI',
       issuer: 'Coursera',
       date: '2025',
-      pdf: 'public/certificates/coursera-certificate.pdf',
+      pdf: '/certificates/coursera-certificate.pdf',
     },
   ];
 
