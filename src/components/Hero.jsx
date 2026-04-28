@@ -51,7 +51,7 @@ const Hero = () => {
                 Get In Touch
               </a>
               <a
-                href="public/snehal-pawar-resume.pdf"
+                href="/snehal-pawar-resume.pdf"
                 download="Snehal_Pawar_Resume.pdf"
                 className="px-8 py-3 border-2 border-cyber-neon text-cyber-neon hover:bg-cyber-neon/10 font-bold rounded-full transition-all flex items-center gap-2"
               >
