@@ -72,14 +72,14 @@ const Projects = () => {
       description: 'Developed an innovative toolkit using Arduino and Flex Sensors to recognize and translate hand gestures into digital commands. Ideal for accessibility and human-computer interaction.',
       tags: ['Arduino', 'Flex Sensors', 'Embedded C'],
       icon: Cpu,
-      report: '/reports/hand gesture report.pdf',
+      report: 'public/reports/hand-gesture-report.pdf',
     },
     {
       title: 'Solar Dryer using IoT',
       description: 'Built an automated solar drying system integrated with IoT. Utilized Arduino and various sensors to monitor and control temperature and humidity for optimal drying efficiency.',
       tags: ['IoT', 'Arduino', 'Sensors', 'Automation'],
       icon: Sun,
-      report: '/reports/Solar dryer Report.pdf',
+      report: 'public/reports/solar-dryer-report.pdf',
     },
   ];
 
