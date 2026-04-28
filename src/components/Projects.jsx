@@ -23,10 +23,13 @@ const ProjectCard = ({ title, description, tags, icon: Icon, report, delay }) =>
           <div className="absolute inset-0 bg-[radial-gradient(#00f3ff_1px,transparent_1px)] [background-size:20px_20px]"></div>
         </div>
         
-        <Icon 
-          className="text-cyber-neon opacity-20 group-hover:opacity-60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500" 
-          size={120} 
-        />
+        <div className="relative group/icon">
+          <div className="absolute inset-0 bg-cyber-neon/20 blur-2xl rounded-full scale-0 group-hover:scale-100 transition-transform duration-500"></div>
+          <Icon 
+            className="text-cyber-neon opacity-20 group-hover:opacity-80 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 relative z-10" 
+            size={120} 
+          />
+        </div>
         
         <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
           {tags.map((tag) => (

@@ -54,25 +54,25 @@ const Certifications = () => {
       title: 'AWS Solutions Architect Simulation',
       issuer: 'Forage / AWS',
       date: '2025',
-      pdf: '/certificates/aws-cert.pdf',
+      pdf: '/certificates/AWS certificate.pdf',
     },
     {
       title: 'Deloitte Cyber Job Simulation (Forage)',
       issuer: 'Forage / Deloitte',
       date: '2025',
-      pdf: '/certificates/deloitte-cert.pdf',
+      pdf: '/certificates/Deolite certificate.pdf',
     },
     {
       title: 'Hackventure 2025 Cyber Security Bootcamp',
       issuer: 'Cyber Security Community',
       date: '2025',
-      pdf: '/certificates/hackventure-cert.pdf',
+      pdf: '/certificates/bootcamp participants certificate -70.pdf',
     },
     {
       title: 'Design Fundamentals with AI',
       issuer: 'Coursera',
       date: '2025',
-      pdf: '/certificates/design-ai-cert.pdf',
+      pdf: '/certificates/Coursera 1PEFNXF3AYA6.pdf',
     },
   ];
 
@@ -99,7 +99,7 @@ const Certifications = () => {
           ></motion.div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {certs.map((cert, index) => (
             <CertificationCard key={cert.title} {...cert} delay={index * 0.1} />
           ))}
