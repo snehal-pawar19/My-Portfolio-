@@ -4,7 +4,7 @@ import { FileText, Github, Linkedin, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const ProfileImg = "public/profile.jpeg";
+  const ProfileImg = "/profile.jpeg";
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-24 bg-white dark:bg-cyber-dark overflow-hidden">
@@ -95,7 +95,7 @@ const Hero = () => {
               {/* Image Frame */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyber-dark bg-cyber-dark shadow-2xl z-10">
                 <img 
-                  src= "public/profile.jpeg"
+                  src= "/profile.jpeg"
                   alt="Snehal Pawar" 
                   className="w-full h-full object-cover object-[center_15%] scale-110 transition-transform duration-700 hover:scale-125"
                 />
