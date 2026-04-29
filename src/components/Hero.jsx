@@ -1,11 +1,11 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-import { FileText, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
+import ProfileImg from '../assets/profile.jpeg';
+import ResumePDF from '../assets/resume.pdf';
 
 const Hero = () => {
-  const ProfileImg = "/profile.jpeg";
-
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-24 bg-white dark:bg-cyber-dark overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
@@ -51,12 +51,13 @@ const Hero = () => {
                 Get In Touch
               </a>
               <a
-                href="/snehal-pawar-resume.pdf"
-                download="Snehal_Pawar_Resume.pdf"
-                className="px-8 py-3 border-2 border-cyber-neon text-cyber-neon hover:bg-cyber-neon/10 font-bold rounded-full transition-all flex items-center gap-2"
+                href={ResumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border-2 border-cyber-neon text-cyber-neon hover:bg-cyber-neon/10 font-bold rounded-full transition-all flex items-center gap-2 transform hover:scale-105 shadow-lg shadow-cyber-neon/5"
               >
                 <FileText size={20} />
-                Resume
+                Download Resume
               </a>
             </div>
 
@@ -95,7 +96,7 @@ const Hero = () => {
               {/* Image Frame */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyber-dark bg-cyber-dark shadow-2xl z-10">
                 <img 
-                  src= "/profile.jpeg"
+                  src={ProfileImg}
                   alt="Snehal Pawar" 
                   className="w-full h-full object-cover object-[center_15%] scale-110 transition-transform duration-700 hover:scale-125"
                 />

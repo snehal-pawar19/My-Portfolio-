@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Cpu, Sun, FileText } from 'lucide-react';
+import { Cpu, Sun } from 'lucide-react';
 
-const ProjectCard = ({ title, description, tags, icon: Icon, report, delay }) => {
+const ProjectCard = ({ title, description, tags, icon: Icon, delay }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -44,22 +44,9 @@ const ProjectCard = ({ title, description, tags, icon: Icon, report, delay }) =>
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-cyber-neon transition-colors duration-300">
           {title}
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base mb-8 flex-grow">
+        <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex-grow">
           {description}
         </p>
-
-        <div className="mt-auto">
-          <a 
-            href={report}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`View Project Report for ${title}`}
-            className="inline-flex items-center gap-2 px-6 py-2.5 bg-cyber-neon/10 text-cyber-neon border border-cyber-neon/30 hover:bg-cyber-neon hover:text-black rounded-lg text-sm font-bold transition-all group/btn w-full justify-center md:w-auto"
-          >
-            <FileText size={18} />
-            View Project Report
-          </a>
-        </div>
       </div>
     </motion.div>
   );
@@ -72,14 +59,12 @@ const Projects = () => {
       description: 'Developed an innovative toolkit using Arduino and Flex Sensors to recognize and translate hand gestures into digital commands. Ideal for accessibility and human-computer interaction.',
       tags: ['Arduino', 'Flex Sensors', 'Embedded C'],
       icon: Cpu,
-      report: '/reports/hand-gesture-report.pdf',
     },
     {
       title: 'Solar Dryer using IoT',
       description: 'Built an automated solar drying system integrated with IoT. Utilized Arduino and various sensors to monitor and control temperature and humidity for optimal drying efficiency.',
       tags: ['IoT', 'Arduino', 'Sensors', 'Automation'],
       icon: Sun,
-      report: '/reports/solar-dryer-report.pdf',
     },
   ];
 

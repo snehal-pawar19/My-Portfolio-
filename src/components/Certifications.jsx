@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Calendar, Award } from 'lucide-react';
+import { Calendar, Award } from 'lucide-react';
 
-const CertificationCard = ({ title, issuer, date, pdf, delay }) => {
+const CertificationCard = ({ title, issuer, date, delay }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -32,16 +32,6 @@ const CertificationCard = ({ title, issuer, date, pdf, delay }) => {
             <Calendar size={16} className="shrink-0" />
             <span>{date}</span>
           </div>
-          
-          <a 
-            href={pdf} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-cyber-neon/10 text-cyber-neon hover:bg-cyber-neon hover:text-black rounded-lg text-sm font-bold flex items-center gap-2 transition-all group/btn"
-          >
-            View Certificate
-            <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-          </a>
         </div>
       </div>
     </motion.div>
@@ -54,25 +44,21 @@ const Certifications = () => {
       title: 'AWS Solutions Architect Simulation',
       issuer: 'Forage / AWS',
       date: '2025',
-      pdf: '/certificates/aws-certificate.pdf',
     },
     {
       title: 'Deloitte Cyber Job Simulation (Forage)',
       issuer: 'Forage / Deloitte',
       date: '2025',
-      pdf: '/certificates/deolite-certificate.pdf',
     },
     {
       title: 'Hackventure 2025 Cyber Security Bootcamp',
       issuer: 'Cyber Security Community',
       date: '2025',
-      pdf: '/certificates/bootcamp-certificate.pdf',
     },
     {
       title: 'Design Fundamentals with AI',
       issuer: 'Coursera',
       date: '2025',
-      pdf: '/certificates/coursera-certificate.pdf',
     },
   ];
 
