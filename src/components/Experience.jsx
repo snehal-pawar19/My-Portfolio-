@@ -13,7 +13,7 @@ const Experience = () => {
     {
       company: 'ProAzure Software Solution',
       role: 'Industrial Trainee',
-      period: 'June 2024 - July 2024',
+      period: 'June 2023 - July 2023',
       location: 'Remote/Pune',
       description: [
         'Working on UI improvement and front-end optimization using modern frameworks.',
