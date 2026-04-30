@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ProfileImg from '../assets/profile.jpeg';
-import ResumePDF from '../assets/resume.pdf';
+import ResumePDF from '../assets/Snehal Pawar Resume.pdf';
 
 const Hero = () => {
   return (
